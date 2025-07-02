@@ -16,11 +16,36 @@ This theme brings full Tokyo Night aesthetics to your terminal file manager, ble
 
 ## Installation
 
-1. **Save the theme file:**
+### Quick Install
 
-   Copy `tokyo-night.ini` to your Midnight Commander skins directory:
+```bash
+# Create the skins directory
+mkdir -p ~/.local/share/mc/skins/
 
-   ```bash
-   mkdir -p ~/.local/share/mc/skins
-   cp tokyo-night.ini ~/.local/share/mc/skins/
+# Download the skin file
+curl -o ~/.local/share/mc/skins/tokyonight.ini https://raw.githubusercontent.com/lairizzle/mc-tokyonight-skin/main/tokyonight.ini
+
+# Configure MC to use the theme
+echo "skin=tokyonight" >> ~/.config/mc/ini
+```
+
+### Manual Install
+
+```
+# Create the skins directory if it doesn't exist
+mkdir -p ~/.local/share/mc/skins/
+```
+
+Download the skin file (tokyonight.ini) from the repository:
+
+    Visit https://github.com/lairizzle/mc-tokyonight-skin
+
+    Download or copy the tokyonight.ini file
+
+Copy the skin file into the skins directory:
+
+```
+cp /path/to/downloaded/tokyo-night.ini ~/.local/share/mc/skins/
+```
+Once copied open MC > Options > Appearance > Select tokyonight as skin.
 
